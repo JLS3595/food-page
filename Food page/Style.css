@@ -1,0 +1,94 @@
+﻿body {
+    font-family: 'Balsamiq Sans', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.logo{
+    display:flex;
+    align-content:center;
+    align-items:center;
+    color:white;
+}
+
+nav div ul li a {
+    color: white !important;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+nav h2 {
+    margin: 10px;
+    padding: 2px 0;
+    padding: 8px 0 0 0;
+}
+
+.presentacion {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, hsla(197, 38%, 28%, 0.578), hsla(195, 35%, 19%, 0.564), hsla(198, 44%, 11%, 0.639)), url("images/banner-min.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+}
+
+.info-presentacion {
+    padding-right: 50%;
+}
+
+.info-presentacion h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 70px;
+}
+
+.info-presentacion h2 {
+    font-size: 35px;
+}
+
+
+.botones button
+{
+   padding:20px;
+}
+
+.historia {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Balsamiq Sans', cursive;
+    color: black;
+}
+
+.img-historia {
+    height:350px;
+    background-image: url("images/about-min.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius:5px;
+}
+
+.historia-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-50{
+    width:50%;
+}
+
