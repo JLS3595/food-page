@@ -67,7 +67,111 @@ nav h2 {
 
 .historia {
     display: flex;
-    align-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+    font-family: 'Balsamiq Sans', cursive;
+    color: black;
+}
+
+
+.historia-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    justify-content: space-between;
+}
+
+.row-his {
+    width: 530px;
+    padding:20px 0;
+
+}
+
+.img-historia {
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+}
+
+
+.Tipos-alimentos {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+    font-family: 'Balsamiq Sans', cursive;
+    color: black;
+    background: #f4f4f4;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.column-button {
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.column-button:hover {
+    text-decoration: none;
+    box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
+
+}
+
+.column-button div {
+    margin: 40px 0 10px;
+}
+
+.column-button p {
+    color:#212529;
+}
+
+.column-button h4{
+   color:#3B3663;
+}
+
+.column-button:hover h4{
+   color:#ffc107;
+}
+
+
+.contactanos {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to right, hsla(197, 38%, 28%, 0.578), hsla(195, 35%, 19%, 0.564), hsla(198, 44%, 11%, 0.639)), url("images/banner-min.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.contactanos span{
+    color:#ffc107;
+}
+
+.text-contactanos {
+    margin-bottom: 35px;
+}
+
+.ventajas {
+    display: flex;
     align-items: center;
     width: 100%;
     min-height: 100vh;
@@ -75,20 +179,33 @@ nav h2 {
     color: black;
 }
 
-.img-historia {
-    height:350px;
-    background-image: url("images/about-min.jpg");
-    background-position: center;
-    background-size: cover;
-    border-radius:5px;
-}
-
-.historia-flex {
+.container-ventajas {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.row-50{
-    width:50%;
+.column-ventajas {
+    padding: 10px;
+    flex: 1; /*Automaticamente ocupa todo el espacio del contenedor*/
+    height: 650px;
+}
+
+.img-ventajas {
+    height: auto;
+}
+
+.column-ventajas i {
+    font-size: 35px;
+    color: #ffc107;
+    padding-right: 10px;
+}
+
+.column-ventajas h4 {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.ventaja-central {
+    margin: 30% 0 30% 0;
 }
 
