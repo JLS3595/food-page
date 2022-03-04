@@ -1,4 +1,4 @@
-﻿body {
+body {
     font-family: 'Balsamiq Sans', cursive;
     padding: 0;
     margin: 0;
@@ -231,6 +231,7 @@ nav h2 {
 
 
 @media all and (max-width: 1200px) {
+
     .row-his {
         width: 100%;
     }
@@ -246,9 +247,12 @@ nav h2 {
     .column-ventajas div {
         margin-bottom: 45px;
     }
+
 }
 
 @media all and (max-width: 1000px) {
+
+
     .container-button {
         flex-direction: column;
         padding: 10px 0;
@@ -265,5 +269,26 @@ nav h2 {
         margin: 10px 0;
     }
 
+
+}
+
+@media all and (max-width: 780px) {
+    .info-presentacion {
+        padding-right: 0;
+    }
+ 
+}
+
+
+@media all and (max-width: 550px) {
+
+    .info-presentacion h1 {
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 50px;
+    }
+
+    .info-presentacion h2 {
+        font-size: 25px;
+    }
 
 }
