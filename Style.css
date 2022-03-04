@@ -9,17 +9,25 @@ header {
 }
 
 .navbar {
+
     background-color: transparent !important;
+
 }
 
-.logo{
-    display:flex;
-    align-content:center;
-    align-items:center;
-    color:white;
+.navbar-black-background {
+
+    background-color: #000000e6 !important;
+    transition: all 0.6s ease;
 }
 
-nav div ul li a {
+.logo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+.collapse ul li a {
     color: white !important;
     font-weight: 700;
     font-size: 20px;
@@ -44,6 +52,7 @@ nav h2 {
     background-color: black;
     font-family: 'Balsamiq Sans', cursive;
     color: white;
+    padding: 150px 0;
 }
 
 .info-presentacion {
@@ -94,6 +103,15 @@ nav h2 {
     border-radius: 5px;
 }
 
+.info-historia div h3{
+    margin: 15px 0 15px 0;
+    color: #ffc107;
+}
+
+.info-historia button {
+    padding: 15px;
+    font-weight: bold;
+}
 
 .Tipos-alimentos {
     display: flex;
@@ -107,6 +125,7 @@ nav h2 {
 
 .container-button {
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-between;
   
 }
@@ -114,13 +133,12 @@ nav h2 {
 .column-button {
     width: 30%;
     height: 300px;
-    display: inline-block;
     box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
     transition: all 0.3s ease;
     border-radius: 5px;
     background: white;
     text-align: center;
-    padding: 10px;
+    padding: 50px 20px;
 }
 
 .column-button:hover {
@@ -130,7 +148,7 @@ nav h2 {
 }
 
 .column-button div {
-    margin: 40px 0 10px;
+    margin-bottom: 10px;
 }
 
 .column-button p {
@@ -145,31 +163,6 @@ nav h2 {
    color:#ffc107;
 }
 
-
-.contactanos {
-    width: 100%;
-    height: 70vh;
-    background-image: linear-gradient(to right, hsla(197, 38%, 28%, 0.578), hsla(195, 35%, 19%, 0.564), hsla(198, 44%, 11%, 0.639)), url("images/banner-min.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    font-family: 'Balsamiq Sans', cursive;
-    color: white;
-    text-align: center;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.contactanos span{
-    color:#ffc107;
-}
-
-.text-contactanos {
-    margin-bottom: 35px;
-}
-
 .ventajas {
     display: flex;
     align-items: center;
@@ -177,21 +170,17 @@ nav h2 {
     min-height: 100vh;
     font-family: 'Balsamiq Sans', cursive;
     color: black;
+    padding: 50px 0;
 }
 
 .container-ventajas {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .column-ventajas {
     padding: 10px;
     flex: 1; /*Automaticamente ocupa todo el espacio del contenedor*/
     height: 650px;
-}
-
-.img-ventajas {
-    height: auto;
 }
 
 .column-ventajas i {
@@ -205,7 +194,77 @@ nav h2 {
     font-weight: 700;
 }
 
-.ventaja-central {
-    margin: 30% 0 30% 0;
+.column-ventajas div {
+    margin-bottom: 30%;
 }
 
+.column-ventajas img {
+    max-width:100%;
+    height:auto;
+}
+
+.contactanos {
+    width: 100%;
+    background-image: linear-gradient(to right, hsla(197, 38%, 28%, 0.578), hsla(195, 35%, 19%, 0.564), hsla(198, 44%, 11%, 0.639)), url("images/banner-min.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.contactanos div.container{
+    padding: 210px 0;
+}
+
+.contactanos span{
+    color:#ffc107;
+}
+
+.text-contactanos {
+    margin-bottom: 35px;
+}
+
+
+@media all and (max-width: 1200px) {
+    .row-his {
+        width: 100%;
+    }
+
+    .container-ventajas {
+        flex-direction: column;
+    }
+
+    .container-ventajas div{
+        text-align:center;
+    }
+
+    .column-ventajas div {
+        margin-bottom: 45px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .container-button {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar{
+        background-color: #000000e6 !important;
+    }
+
+    }
+
+    .column-button {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+
+}

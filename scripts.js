@@ -1,9 +1,17 @@
-$(function () {
+$(document).ready(function () {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.navscroll').addClass("black");
+        var scroll = $(window).scrollTop();
+
+        if (scroll < 200) {
+
+            $('.navbar').removeClass('navbar-black-background');
         } else {
-            $(".navscroll").removeClass("black");
+
+            $('.navbar').addClass('navbar-black-background');
         }
-    });
-});
+
+    })
+
+
+})
+
